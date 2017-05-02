@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">刷新更新</string>
+    <string name="pull_to_refresh">下拉即可刷新</string>
+    <string name="release_to_refresh">松开即可刷新</string>
+    <string name="refreshing">载入中请稍后</string>
+    <string name="refresh_succeed">刷新成功</string>
+    <string name="refresh_fail">刷新失败</string>
+    <string name="pullup_to_load">上拉加载更多</string>
+    <string name="release_to_load">释放立即加载</string>
+    <string name="loading">正在加载...</string>
+    <string name="load_succeed">加载成功</string>
+    <string name="load_fail">加载失败</string>
+    <string name="load_end">已全部加载完成</string>
+</resources>
