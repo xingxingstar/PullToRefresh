@@ -5,6 +5,7 @@ import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.TextView;
 
 /**
  * author：shixinxin on 2017/5/2
@@ -16,10 +17,15 @@ public class MyRecyclerViewAdapter extends RecyclerView.Adapter<MyRecyclerViewAd
 
     private Context context;
     private LayoutInflater inflater;
+    private int count;
 
     public MyRecyclerViewAdapter(Context context) {
         this.context = context;
         inflater = LayoutInflater.from(context);
+    }
+
+    public void setCount(int count) {
+        this.count = count;
     }
 
     @Override
@@ -30,18 +36,21 @@ public class MyRecyclerViewAdapter extends RecyclerView.Adapter<MyRecyclerViewAd
 
     @Override
     public void onBindViewHolder(MyViewHolder holder, int position) {
-
+        holder.tv_item.setText("测试" + position);
     }
 
     @Override
     public int getItemCount() {
-        return 30;
+        return count;
     }
 
     class MyViewHolder extends RecyclerView.ViewHolder {
 
+        TextView tv_item;
+
         public MyViewHolder(View itemView) {
             super(itemView);
+            tv_item = (TextView) itemView.findViewById(R.id.tv_item);
         }
     }
 }
